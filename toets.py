@@ -1,10 +1,7 @@
 print ("welkom bij de auditie")
-# var 1 amount: 4
-#var 2 amount: 6
-#var 3 amount: 8
 geelen = 4
-mevrouwwit= 6
-groenwoud = 8
+mevrouwwit= 20
+groenwoud = 30
 var1= 0
 var2= 0 
 var3= 0
@@ -22,7 +19,7 @@ if zin == "ja":
         var1 = var1 + 1
 
     elif leeftijd <=18:
-        var2 = var2 + 0
+        var2 = var2 + 4
 
     elif leeftijd >= 20:
         var3 = var3 + 3
@@ -33,7 +30,7 @@ if zin == "ja":
 
     if diploma == "nee": 
         var2 = var2 + 2
-        var3 = var3 + 0
+        var3 = var3 + 9
 
     if gender == "man":
         var2 = var2 + 3
@@ -44,31 +41,34 @@ if zin == "ja":
 
     if verlegen == "ja":
         var1 = var1 + 2
-        var2 = var2 + 1
+        var2 = var2 + 7
 
     elif verlegen == "nee":
         var3 = var3 + 0
 
     if boos =="ja":
-        var3 == var3 + 3
+        var3 == var3 + 15
     elif boos == "nee":
         var2 = var2 + 4
         var1 = var1 + 1
 
 
-if var1 >= 0 or var1 <=5 :
-    print ("u hebt te rol van geelen")
+    if geelen > var1 or geelen <=4 :
+        print ("u hebt te rol van geelen")
 
-if var2 >= 4:
-    print("u hebt de rol van mevrouw de wit")
+    elif mevrouwwit > var2 or mevrouwwit <= 20:
+        print("u hebt de rol van mevrouw de wit")
 
-if var3 >= 6:
-    print("u heeft de rol van groenwoud")
+    elif groenwoud > var3 or groenwoud <= 30:
+        print("u heeft de rol van groenwoud")
 
 
 elif zin == "nee":
     print("uhm ok?")
 
+
+print(var1)
 print(var2)
+print(var3)
 
 
